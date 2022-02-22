@@ -2,7 +2,7 @@ function orAllEntered(request, response, next) {
     try {
         const {firstName, lastName, email, password, age, city} = request.body;
 
-        if (email === "") {
+        if (!email) {
             throw new Error('Please, enter "Email"')
         }
         if (password === "") {
