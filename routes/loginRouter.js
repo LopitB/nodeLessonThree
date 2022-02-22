@@ -5,8 +5,8 @@ const loginMiddleware = require('../middleware/orAllEntered');
 
 const loginRouter = Router();
 
-loginRouter.get('/', loginMiddleware,loginController.renderLogin);
-loginRouter.post('/', loginController.emailAudit);
+loginRouter.get('/', loginController.renderLogin);
+loginRouter.post('/', loginMiddleware, loginController.emailAudit);
 
 module.exports = loginRouter;
 

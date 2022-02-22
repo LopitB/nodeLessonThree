@@ -5,19 +5,19 @@ function orAllEntered(request, response, next) {
         if (!email) {
             throw new Error('Please, enter "Email"')
         }
-        if (password === "") {
+        if (!password) {
             throw new Error('Please, enter "Password"')
         }
-        if (lastName === "") {
+        if (!lastName) {
             throw new Error('Please, enter "Last Name"')
         }
-        if (firstName === "") {
+        if (!firstName) {
             throw new Error('Please, enter "First Name"')
         }
-        if (age === "") {
+        if (!age) {
             throw new Error('Please, enter "Age"')
         }
-        if (city === "") {
+        if (!city) {
             throw new Error('Please, enter "City"')
         }
 
